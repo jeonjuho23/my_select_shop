@@ -1,0 +1,10 @@
+name: 'DEPLOY'
+
+on:
+  workflow_run:
+    workflows: ["TEST"]  # 첫 번째 워크플로우가 완료되면 실행됨
+    types:
+      - completed
+
+jobs:
+  build_deploy:

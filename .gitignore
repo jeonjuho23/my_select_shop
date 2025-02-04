@@ -38,4 +38,5 @@ out/
 
 ### application settings ###
 /src/main/resources/*.properties
-/src/main/resources/*.yarn
+/src/main/resources/*.yaml
+/src/main/resources/*.yml

@@ -22,6 +22,10 @@ jobs:
       - name: make executable gradlew
         run: chmod +x ./gradlew
 
+      - name: Create application.properties
+        run: |
+          echo "${{ secrets.APPLICATION_PROPERTIES }}" > src/main/resources/application.properties
+
       - name: run unittest
         run: |
           ./gradlew clean test
